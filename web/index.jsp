@@ -1,4 +1,4 @@
-<%@ page import="java.util.Date" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: Nikita
   Date: 20.11.2016
@@ -11,8 +11,18 @@
     <title>Main page</title>
 </head>
 <body>
-Hello world!!
-<br>
-<%=new Date()%>
+<form method="post" action="/BeerExpert">
+    Select beer by color<p>
+    <label>
+        Color:
+        <select name="color" size="1">
+            <option value="Light">Light</option>
+            <option value="Amber">Amber</option>
+            <option value="Brown">Brown</option>
+            <option value="Dark">Dark</option>
+        </select>
+    </label>
+    <input type="submit">
+</form>
 </body>
 </html>
